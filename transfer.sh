@@ -12,8 +12,7 @@ user="ubuntu"
 keys="~/.ssh/id_rsa"
 
 if [ $# -eq 2 ]; then
-scp -i "$keys" -o StrictHostKeyChecking=no "$path"/" "$user"@"$ip":/home/"$user"/
+  scp -i "$keys" -o StrictHostKeyChecking=no "$path/$file" "$user@$ip:/home/$user/"
 else
   echo -e "Usage: ${brown}$filename PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY${reset}"
 fi
-
