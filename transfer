@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Transfer a file from the clientside to serverside
-#
-# Variables
-path=
