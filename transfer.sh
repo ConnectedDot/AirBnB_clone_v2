@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Transfer a file from the clientside to serverside
+# execute: ./transfer.sh PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+# execute: ./transfer.sh 0-setup_web_static.sh 54.237.118.39	ubuntu ~/.ssh/id_rsa
 #
 # Variables
 path="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
